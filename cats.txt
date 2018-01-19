@@ -1,0 +1,31 @@
+Substantives [I, You, Someone, Something, People, Body]
+
+RelationalSubstantives [Kind, Part]
+
+Determiners [This, TheSame, Other]
+
+Quantifiers [One, Two, Some, All, MuchMany]
+
+Evaluators [Good, Bad]
+
+Descriptors [Big, Small]
+
+MentalPredicates [Know, Think, Want, Feel, See, Hear]
+
+Speech [Say, Words, True]
+
+ActionsEventsMovementContact [Do, Happen, Move, Touch]
+
+LocationExistencePossessionSpecification [BeSomewhere, ThereIs, Have, BeSomeoneOrSomething]
+
+LifeAndDeath [Live, Die]
+
+Time [WhenTime, Now, Before, After, ALongTime, AShortTime, ForSomeTime, Moment]
+
+Space [WherePlace, Here, Above, Below, Far, Near, Side, Inside]
+
+LogicalConcepts [Not, Maybe, Can, Because, If]
+
+IntensifierAugmentor [Very, More]
+
+Similarity [LikeWay]
