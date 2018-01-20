@@ -1,0 +1,64 @@
+~$ dude explain apple
+
+Quantifiers -> One
+
+Evaluators -> Good
+
+Descriptors -> Small
+
+Substantives -> Something
+
+LocationExistencePossessionSpecification -> ThereIs
+
+Time -> ForSomeTime
+
+"one good small something there is for some time"
+
+//
+
+~$ dude explain dude
+
+Substantives -> I
+
+"I"
+
+//
+
+~$ dude explain i
+
+Substantives -> You
+
+Quantifiers -> One
+
+LogicalConcepts -> Can
+
+MentalPredicates -> Think
+
+ActionsEventsMovementContact -> Do
+
+LifeAndDeath -> Live
+
+Time -> Now
+
+Space -> Here
+
+"you one can think do live now here"
+
+//
+
+~$ dude explain someone x eat something y --xy
+
+"(someone x) do something (something y) for some time \
+
+this happen body (something y) the same time \
+
+because (someone x) want part (something y) be inside body (someone x)"
+
+
+
+
+
+
+
+
+
