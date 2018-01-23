@@ -128,7 +128,7 @@ Determiners -> This, Other
 
 Space -> WherePlace
 
-"when after being this place now is other place"
+"when after being in this place now is in other place"
 
 
 
