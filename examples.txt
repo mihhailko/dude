@@ -54,11 +54,81 @@ this happen body (something y) the same time \
 
 because (someone x) want part (something y) be inside body (someone x)"
 
+//
 
+~$ dude explain we
 
+Substantives -> People
 
+RelationalSubstantives -> Part
 
+Quantifiers -> Some
 
+LocationExistencePossessionSpecification -> BeSomeoneOrSomething
+
+LogicalConcepts -> Maybe
+
+IntensifierAugmentor -> More
+
+"maybe more (than) one be some part maybe people"
+
+"if not more (than) one (then) maybe (self-reference) (aristocrat)"
+
+//
+
+~$ dude explain start
+
+Time -> WhenTime, After, Now
+
+ActionsEventsMovementContact -> Do, Happen
+
+LogicalConcepts -> Not
+
+"when after not happen now do happen"
+
+//
+
+~$ dude explain birth
+
+Time -> WhenTime, After, Now
+
+ActionsEventsMovementContact -> Do, Happen
+
+LogicalConcepts -> Not
+
+LifeAndDeath -> Live
+
+"when after not live now do live"
+
+//
+
+~$ dude explain come
+
+Time -> WhenTime, After, Now
+
+LogicalConcepts -> Not
+
+Space -> Far, Near
+
+LocationExistencePossessionSpecification -> BeSomewhere
+
+"when after being far now is near"
+
+//
+
+~$ dude explain go
+
+Time -> WhenTime, After, Now
+
+LogicalConcepts -> Not
+
+LocationExistencePossessionSpecification -> BeSomewhere
+
+Determiners -> This, Other
+
+Space -> WherePlace
+
+"when after being this place now is other place"
 
 
 
