@@ -1,0 +1,5 @@
+#!/bin/bash
+# Cli interface for dude
+
+java Dude $1 $2
+
