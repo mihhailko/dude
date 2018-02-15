@@ -18,3 +18,7 @@
 
 (meaning oneword)
 
+(defn role [word] (nth (keys oneword) 0))
+
+(role oneword)
+
