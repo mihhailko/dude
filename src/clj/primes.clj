@@ -34,6 +34,6 @@
     [(:meaning word1)(:meaning word2)]
     [(:meaning word2)(:meaning word1)]))
 
-(meaning-sentence) oneword twoword
+(meaning-sentence oneword twoword)
 
 
