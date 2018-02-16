@@ -78,3 +78,31 @@
 
 (defn print-primes [sentence] (do (println (-> sentence :subject :primes))
   (println (-> sentence :predicate :primes))))
+
+
+;; def generation from user input
+
+(defmacro defuserword [symbol form & primes]
+  (let [s (gensym symbol)]
+    `(def ~s '{:form ~form :primes ~primes})))
+
+(defuserword "user-i" "i" "you" "one" "can" "think" "do" "live" "now" "here")
+
+
+;; the following macro would work in case the words may be fetched from a dictionary
+
+(def dictionary {"words" {:form "words"
+                       :primes '("many" "say")}
+              "are" {:form "are"
+                     :primes '("there" "exist")}
+              "cool" {:form "cool"
+                      :primes '("good")}})
+
+(defmacro defusersentence [symbol subject predicate]
+  (let [s (gensym symbol)]
+    `(def ~s (defsentence (get dictionary ~subject) (get dictionary ~predicate)))))
+
+(defusersentence "user-stc" "words" "cool")
+
+
+
