@@ -37,3 +37,21 @@
 (meaning-sentence oneword twoword)
 
 
+;; map-oriented approach w/o dictionary
+
+(defn defsentence [subject predicate] {:subject subject :predicate predicate})
+
+(defn defword [form meaning] {:form form :meaning meaning})
+
+(defn get-meaning [sentence] (let [{s :subject p :predicate} sentence] [(:meaning s) (:meaning p)]))
+
+(defn get-forms [sentence] (let [{s :subject p :predicate} sentence] [(:form s) (:form p)]))
+
+(def start (defword "start" ["when after not happen now do happen"]))
+
+(def i (defword "I" ["you one can think do live now here"]))
+
+(defsentence i start)
+
+
+
