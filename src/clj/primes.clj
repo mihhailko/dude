@@ -69,10 +69,12 @@
 
 (deffword new-i "i" "you" "one" "can" "think" "do" "live" "now" "here")
 
-(deffword new-start "start" "you" "one" "can" "think" "do" "live" "now" "here")
+(deffword new-start "start" "when" "after" "not" "happen" "now" "do" "happen")
 
 (defmacro deffsentence [symbol subject predicate]
   `(def ~symbol (defsentence ~subject ~predicate)))
 
 (deffsentence stc new-i new-start)
 
+(defn print-primes [sentence] (do (println (-> sentence :subject :primes))
+  (println (-> sentence :predicate :primes))))
