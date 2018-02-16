@@ -62,4 +62,17 @@
 (get-forms sent)
 
 
+;; some macro stuff
+
+(defmacro deffword [symbol form & primes]
+  `(def ~symbol '{:form ~form :primes ~primes}))
+
+(deffword new-i "i" "you" "one" "can" "think" "do" "live" "now" "here")
+
+(deffword new-start "start" "you" "one" "can" "think" "do" "live" "now" "here")
+
+(defmacro deffsentence [symbol subject predicate]
+  `(def ~symbol (defsentence ~subject ~predicate)))
+
+(deffsentence stc new-i new-start)
 
