@@ -1,4 +1,4 @@
-(ns dictionary)
+(ns newdict)
 
 (def dict {:words22 {:form "words"
                     :primes '("many" "say")
@@ -32,4 +32,16 @@
                   (recur tar map (inc n)))))
 
 
+(defn findtarm [tar n]
+              (let [map ((nth (keys dict) n) dict)
+                    form (:form map)
+                    cnt (count (keys dict))]
+                (if (= tar form)
+                  map
+                  (recur tar (inc n)))))
 
+(defn translate [form tar]
+              (let [f (findtarm form 0)
+                    l (findtarl tar 0)
+                    p (findtarp (nth (:primes f) 0) l 0)]
+                p))
