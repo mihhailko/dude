@@ -83,7 +83,12 @@
 
 (translate3 "words" "en" "ee" @dict)
 
+;; to get the keys for desired word-maps
 
+(defn get-word-keys [target dict]
+  (filter #(= (:form ((keyword %) dict)) target) (keys dict)))
+
+(get-word-keys "sõnad" @dict)
 
 
 
