@@ -36,6 +36,15 @@
                   (recur tar (inc n)))))
 
 
+<<<<<<< HEAD
+=======
+(defn translate [form tar]
+  (let [f (findtarm form 0)
+        l (findtarl tar 0)
+        p (findtarp (nth (:primes f) 0) l 0)]
+                p))
+
+>>>>>>> b34c112788f202c264eb4ab8a87f5df064669208
 (defn translate2 [form tar dict]
   (let [primes2  (first (filter #(= (:form %) form) (vals dict)))
         primes   (some #(if (= (:form %) form) (:primes %)) (vals dict))
@@ -69,6 +78,7 @@
                 (if (= tar form)
                   map
                   (recur tar (inc n) dict))))
+<<<<<<< HEAD
 (defn match-primes [lst tarlst]
   (for [x lst
         y tarlst
@@ -101,6 +111,42 @@
 
 
 
+=======
+
+(defn translate3 [form tar dict]
+  (let [primes2  (first (filter #(= (:form %) form) (vals dict)))
+        primes   (some #(if (= (:form %) form) (:primes %)) (vals dict))
+        tar-form (some #(if
+                            (and
+                             (= (:primes %) primes)
+                             (= (:lang %) tar))
+                          (:form %)) (vals dict))]
+    tar-form))
+
+(translate3 "words" "ee" @dict)
+
+(filter #(= (:primes %) '("say" "many")) (vals @dict))
+
+(filter #(= (:primes %) '("say" "many")) (vals @dict))
+
+(some #(if (= (:form %) "words") (:primes %)) (vals @dict))
+
+(some #(if (= (:primes %) '("many" "say")) (:form %)) (vals @dict))
+
+(defn findtarp [tar map n]
+  (let [p (nth (:primes map) n)]
+                (if (= tar p)
+                  (:form map)
+                  (recur tar map (inc n)))))
+
+(some (partial = "say") '("many" "say"))
+
+(findtarm "words" 0 @dict)
+
+(def srcmap (find-list-primes "words" @dict))
+
+(def tarmap (find-list-primes "sõnad" @dict))
+>>>>>>> b34c112788f202c264eb4ab8a87f5df064669208
 
 
 
